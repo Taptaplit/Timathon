@@ -1,6 +1,7 @@
 # MiniBoard
 
 
+
 ## Install & Run
 
 ### Download as zip
@@ -21,5 +22,9 @@
 ### Games
 
 #### Pong Game
-##### A simple 2D pong game. Player 1's controls -> W & S; Player 2's controls -> Up & Down Arrow keys 
+##### A 2D pong game. First to 21 wins! Player 1's controls -> W & S; Player 2's controls -> Up & Down Arrow keys 
 ![image](https://media.discordapp.net/attachments/754004845404487831/820394694176931860/unknown.png?width=449&height=428)
+
+#### Energised
+##### A 2D game with dots all around the screen, the more you collect the higer your velocity gets! More collected dots -> Higher score. This is only single player, and the use the right arrow key, left arrow key and the space bar to move.
+![image](https://media.discordapp.net/attachments/754004845404487831/820398234316308480/unknown.png)
