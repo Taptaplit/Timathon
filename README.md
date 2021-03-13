@@ -6,12 +6,12 @@
 
 ### Download as zip
 ### Install Dependencies -> ``pip install pygame random`` or ``pip3 install pygame random`` 
-### Change Directory -> ``cd Timathon-main``
+### Change Directory -> ``cd Timathon-main`` and ``cd App``
 ### Run -> ``python main.py`` or ``py main.py`` or ``python3 main.py``
 
 
 ## Website
-### Github link -> ``https://github.com/Taptaplit/Timathon``
+### Code Location -> `cd Timathon-main` and ``cd website``
 ### Website link -> ``LINK``
 
 
