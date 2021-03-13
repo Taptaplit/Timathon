@@ -170,11 +170,6 @@ def redraw():
   p2Rect = p2_score.get_rect()
   p2Rect.center = (470,50)
   win.blit(p2_score, p2Rect)
-  
-  if int(paddle1.points) == 21:
-      game_score('1')
-  if int(paddle2.points) == 21:
-      game_score('2')
 
 
 
@@ -229,7 +224,17 @@ def game_loop():
             ball.dirx = 1
         if paddle2.rect.colliderect(ball.rect):
             ball.dirx = -1
-
+        
+        if int(paddle1.points) == 21:
+            paddle1.points = 0
+            paddle2.points = 0
+            game_score('1')
+            
+        if int(paddle2.points) == 21:
+            paddle1.points = 0
+            paddle2.points = 0
+            game_score('2')
+        
         redraw()
             
     
