@@ -10,8 +10,8 @@
 
 
 ## Website
-### Github link >> ``https://github.com/Taptaplit/Timathon``
-### Website link >> ``LINK``
+### Github link -> ``https://github.com/Taptaplit/Timathon``
+### Website link -> ``LINK``
 
 
 # MiniBoard
