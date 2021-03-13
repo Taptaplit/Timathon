@@ -1,6 +1,5 @@
 import pygame
 import os, random
-from typing import TYPE_CHECKING
 try:
     from MiniGame import win, home_loop
 except:
@@ -188,8 +187,13 @@ def game_controls():
         clock.tick(15)
            
 
-def game_score(text):
+def game_score(text,scores):
     score = True
+    
+    if scores == 0:
+        color = (255, 0, 0)
+    else:
+        color = (0, 255, 0)
     
     while score:
         for event in pygame.event.get():
@@ -197,7 +201,7 @@ def game_score(text):
                 pygame.quit()
                 quit()
                 
-        win.fill((255, 255, 255))
+        win.fill(color)
         largeText = pygame.font.Font('freesansbold.ttf', 20)
         TextSurf, TextRect = text_objects(f"{text}", largeText)
         TextRect.center = ((500/2),(480/2))
@@ -228,6 +232,7 @@ def game_loop():
     beans = []
     beanFill = 10
     Scores = 0
+    time = 0
     
     run = True
     finish = False
@@ -241,15 +246,16 @@ def game_loop():
                 quit()
             if event.type == pygame.USEREVENT: 
                 counter -= 1 
+                time += 0.5
                 if counter > 0:
                     text = str(counter).rjust(3) 
                 else: 
                     text = f'Time is up your score is {Scores * 10}'
                     finish = True
-                    isDoned = game_score(text)
+                    isDoned = game_score(text, int(Scores * 10))
                     return isDoned
                 
-        if len(beans) < beanFill:
+        if len(beans) < round(beanFill + time):
             beans.append(Bean(random.randint(10, 420), random.randint(10, 400), 6))
             
         for bean in beans:

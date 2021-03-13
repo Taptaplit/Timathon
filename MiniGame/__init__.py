@@ -33,8 +33,10 @@ def text_objects(text, font):
 
 
 
+import MiniGame.soccer as MGS
+import MiniGame.energised as MGE
+import MiniGame.Pong as MGP
 
-import MiniGame.energised as MG
 def home_loop():
     clock = pygame.time.Clock()
     home = True
@@ -50,8 +52,9 @@ def home_loop():
         TextRect.center = ((500/2),(480/8))
         win.blit(TextSurf, TextRect)
         
-        button('Energised', 'Game\\standing.png', 40, 100, 64, 64, MG.game_intro)
-        # button('', 'Game\\R2.png', 100, 100, 64, 64, MG.game_intro)
+        button('Energised', 'Game\\standing.png', 40, 100, 64, 64, MGE.game_intro)
+        button('Soccer', 'Game\\R2.png', 140, 100, 64, 64, MGS.game_intro)
+        button('Pong Game', 'Game\\R2.png', 250, 100, 64, 64, MGP.game_intro)
         
         
         pygame.display.update()
