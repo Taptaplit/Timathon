@@ -21,7 +21,8 @@
 
 ## MiniBoard
 ![image](https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png)
-### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. There is also a website made for MiniBoard, to check it out visit ``LINK``
+### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. There is also a [website](https://github.com)(PUT ACTUAL LINK HERE) version of MiniBoard, it is different than the app, so try to do some games/activites in both.
+
 #### **Note: There are 2 miniboards, one for the website and the other is for the app, both of them are different. If you can please try to check out both, you do not have to play every game/activity, but try to do some.
 
 ### ________________________________________________________________________________________
