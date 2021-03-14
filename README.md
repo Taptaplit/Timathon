@@ -2,6 +2,8 @@
 
 ### There is a website and application for MiniBoard. I recommend visiting the [website](https://github.com)(PUT ACTUL WEBSITE LINK THERE) before trying the application.
 
+### ________________________________________________________________________________________
+
 ## Install & Run
 
 ### Download as zip
@@ -14,6 +16,7 @@
 ### Code Location -> `cd Timathon-main` and ``cd website``
 ### Website link -> ``LINK``
 
+### ________________________________________________________________________________________
 
 ## MiniBoard
 ![image](https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png)
