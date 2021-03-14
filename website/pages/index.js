@@ -49,6 +49,7 @@ export function Navbar() {
         height: 40px;
         width: 100%;
         transition: 0.3s;
+        position: relative;
         z-index: 1000000;
       }
       .space {
