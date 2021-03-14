@@ -113,7 +113,7 @@ export default function Home() {
               }}>
                 <h1 className="thin-h1">MiniBoard</h1>
                 <h3 className="info">Have a ton of fun playing all sorts of games and activites from the 2D pong game to 2D soccer to the ISS location!</h3>
-                <p className="italic">Having Fun -> Being Positive -> Better Mindset</p>
+                <p className="italic">Having Fun = Being Positive = Better Mindset</p>
 
               </motion.div>
             </center>

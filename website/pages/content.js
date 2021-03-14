@@ -73,7 +73,7 @@ export default function Content() {
                         <center>
                             <h3 className="thin-h1">Energised</h3>
                         </center>
-                        <p className="info">A single player 2D game made with pygame. Controls: Player 1 -> right, left arrow keys to move side to side & space bar to move up The goal is to collect as many dots as possible, every 2 seconds the amount to dots += 1. More collected dots -> Higher score!</p>
+                        <p className="info">A single player 2D game made with pygame. Controls: Player 1: right, left arrow keys to move side to side & space bar to move up The goal is to collect as many dots as possible, every 2 seconds the amount to dots += 1. More collected dots = Higher score!</p>
                     </div>
 
                     <div className="cards">
@@ -81,7 +81,7 @@ export default function Content() {
                         <center>
                             <h3 className="thin-h1">Pong Game</h3>
                         </center>
-                        <p className="info">A multiplayer 2D game made with pygame. Controls: Player 1 -> W, S to move the paddle up and down | Player 2 -> Up, Down Arrow Keys to move the paddle up and down. The goal is to hit the ball with your paddle, if you miss it and it does behind your paddle, the other player gets a point. First to 21 wins!</p>
+                        <p className="info">A multiplayer 2D game made with pygame. Controls: Player 1: W, S to move the paddle up and down | Player 2: Up, Down Arrow Keys to move the paddle up and down. The goal is to hit the ball with your paddle, if you miss it and it does behind your paddle, the other player gets a point. First to 21 wins!</p>
                     </div>
 
                     <div className="cards">
