@@ -19,9 +19,13 @@
 
 ### ________________________________________________________________________________________
 
-## MiniBoard App
+## MiniBoard
 ![image](https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png)
 ### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. There is also a website made for MiniBoard, to check it out visit ``LINK``
+
+### ________________________________________________________________________________________
+
+## MiniBoard App
 
 ### ________________________________________________________________________________________
 
@@ -38,3 +42,10 @@
 #### ISS Location
 ##### Plots the current location of the International Space Station!
 ![image](https://media.discordapp.net/attachments/754004845404487831/820492310164013056/unknown.png)
+
+
+### ________________________________________________________________________________________
+
+## MiniBoard Website Edition (MiniBoard V2)
+
+### ________________________________________________________________________________________
