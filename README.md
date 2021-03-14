@@ -4,7 +4,7 @@
 
 ### ________________________________________________________________________________________
 
-## Install & Run
+## Install & Run the MiniBoard App
 
 ### Download as zip
 ### Install Dependencies -> `pip install pygame random` or ``pip3 install pygame random`` 
@@ -13,8 +13,8 @@
 
 ### ________________________________________________________________________________________
 
-## Website
-### Code Location -> `cd Timathon-main` and ``cd website``
+## Website Info
+### Website files -> ``cd website``
 ### Website link -> ``LINK``
 
 ### ________________________________________________________________________________________
