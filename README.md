@@ -36,5 +36,5 @@
 ![image](https://media.discordapp.net/attachments/754004845404487831/820398234316308480/unknown.png)
 
 #### ISS Location
-##### Plots the current location of the ISS!
+##### Plots the current location of the International Space Station!
 ![image](https://media.discordapp.net/attachments/754004845404487831/820492310164013056/unknown.png)
