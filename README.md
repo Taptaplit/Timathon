@@ -50,6 +50,8 @@
 ## MiniBoard Website Edition (MiniBoard V2)
 
 
+
+### Info
 ### ________________________________________________________________________________________
 ### Made by @Taptaplit#3992 (Discord)
 #### Hope you enjoy, this project took a lot of hard work!
