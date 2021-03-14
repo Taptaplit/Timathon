@@ -52,10 +52,10 @@
 
 
 ### ________________________________________________________________________________________
-### Info
-#### Made by @Taptaplit#3992 (Discord)
-##### Hope you enjoy, this project took a lot of hard work!
-##### If you liked this project, you can vote for me [here](https://twtcodejam.net/timathon/)
-#### Thanks for checking it out!
+## Info
+### Made by @Taptaplit#3992 (Discord)
+#### Hope you enjoy, this project took a lot of hard work!
+#### If you liked this project, you can vote for me [here](https://twtcodejam.net/timathon/)
+### Thanks for checking it out!
 
 
