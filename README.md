@@ -1,6 +1,6 @@
 # MiniBoard
 
-
+### There is a website and application for MiniBoard. I recommend visiting the website before trying the application.
 
 ## Install & Run
 
