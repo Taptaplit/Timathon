@@ -1,6 +1,6 @@
 # MiniBoard
 
-### There is a website and application for MiniBoard. I recommend visiting the [website](LINK HERE) before trying the application.
+### There is a website and application for MiniBoard. I recommend visiting the [text](https://github.com) before trying the application.
 
 ## Install & Run
 
