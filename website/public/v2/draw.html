@@ -1,0 +1,308 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MiniBoard</title>
+</head>
+<body>
+<a href="/v2"><button type="button" class="goBtn">Go Back To MiniBoard V2</button></a>
+  <center>
+    <canvas id="canvas"></canvas>
+  <h2>Paint Pallet</h2>
+  <button class="red btn" onclick="changeColor('red')"></button>
+  <button class="green btn"  onclick="changeColor('green')"></button>  
+  <button class="black btn" onclick="changeColor('black')"></button>
+  <button class="blue btn"  onclick="changeColor('blue')"></button>
+  <button class="brown btn"  onclick="changeColor('brown')"></button>
+  <button class="pink btn"  onclick="changeColor('pink')"></button>
+  <button class="purple btn"  onclick="changeColor('purple')"></button>
+  <button class="cyan btn" onclick="changeColor('cyan')"></button>
+  <button class="yellow btn" onclick="changeColor('yellow')"></button>
+  <button class="orange btn" onclick="changeColor('orange')"></button>
+  <button class="navy btn" onclick="changeColor('navy')"></button>
+  <button class="grey btn" onclick="changeColor('grey')"></button>
+
+  <h2>Painting Tools</h2>
+  
+  <div class="flex">
+    <button class="white btnE" onclick="changeColor('white')">Eraser</button>
+    <button id="clear">Clear</button>
+    <button id="download">Download</button>
+    <div class="slidecontainer">
+        <label class="mg-20"> Line Thickness <span id="sliderVal"></span></label> 
+        <input type="range" min="1" max="150" value="5" class="slider" id="myRange">
+    </div>
+  </div>
+  </center>  
+  <script type="text/javascript">
+    let color = 'black';
+    let linewidth = 5;
+    
+    window.addEventListener('load', () => {
+        const canvas = document.querySelector('#canvas');
+        var ctx = canvas.getContext('2d');
+    
+        canvas.height = window.innerHeight - 270;
+        canvas.width = window.innerWidth;
+        
+        
+        
+        
+        let painting = false;
+        
+        function startPosition(e) {
+            painting = true;
+            draw(e)
+        }
+        
+        function finishedPosition() {
+            painting = false;
+            ctx.beginPath();
+        }
+        
+        canvas.addEventListener('mousedown', startPosition);
+        canvas.addEventListener('mouseup', finishedPosition);
+        canvas.addEventListener('mousemove', draw);
+        function draw(e) {
+            if(!painting) return;
+            ctx.lineWidth = linewidth;
+            ctx.strokeStyle = color.toString();
+            ctx.lineCap = "round";
+            ctx.lineTo(e.clientX, e.clientY);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX, e.clientY);
+        }
+    })
+
+
+
+    window.addEventListener('resize', () => {
+        const canvas = document.querySelector('#canvas');
+        var ctx = canvas.getContext('2d');
+
+        canvas.height = window.innerHeight - 270;
+        canvas.width = window.innerWidth;
+    })
+
+
+    function changeColor(par) {
+        color = par
+    }
+
+    function changeThickness(val) {
+        linewidth = val
+    }
+
+    function clear() {
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "red";
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function save() {
+        var canvas = document.getElementById("canvas");
+        var img = canvas.toDataURL("image/png");
+        document.write('<h1>Right Click & Download this image (Refresh to go back to drawing)</h1><img src="'+img+'"/>');
+    }
+
+    document.getElementById('clear').onclick = function() {
+        clear();
+    };
+
+    document.getElementById('download').onclick = function() {
+        save();
+    };
+
+    var slider = document.getElementById("myRange");
+    changeThickness(slider.value);
+    var output = document.getElementById("sliderVal");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        changeThickness(this.value);
+        output.innerHTML = this.value;
+    }
+
+  </script>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    .slidecontainer {
+    width: 60%;
+    }
+
+    #download {
+       width: 100px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 50px;
+        background: green;
+        color: white;
+        border: 2px solid black; 
+    }
+
+    .mg-20 {
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    #clear {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 50px;
+        background: red;
+        color: white;
+        border: 2px solid black;
+    }
+
+    .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 20px;
+    }
+
+    .slider:hover {
+    opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    }
+
+   .flex {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0 auto;
+   }
+  .goBtn {
+      font-weight: bold;
+      font-family: 'Poppins';
+      width: 200px;
+      margin-bottom: 20px;
+      height: 30px;
+      border-radius: 10px;
+      border: 2px solid white;
+      background: transparent;
+      margin-top: 10px;
+      color: #fff;
+      transition: 0.5s ease-in-out;
+  }
+  .goBtn:hover {
+      width: 220px;
+      height: 33px;
+      background: white;
+      border: 2px solid white;
+      color: black;
+      font-size: 15px;
+  }
+
+  .CANVA {
+      background: white;
+  }
+
+  .canvas {
+      border-raduis: 100px;
+  }
+  body {
+      font-family: 'Poppins';
+      background: #159CD6;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    }
+    #canvas {
+        background: white;
+        border-radius: 20px;
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 5px solid black;
+    }
+
+    .btnE {
+        width: 100px;
+        height: 50px;
+        background: #e75480;
+        border-radius: 50px;
+        border: 5px solid black;
+    }
+
+    .red {
+    background: red;
+    }
+
+    .grey {
+        background: grey;
+    }
+
+    .green {
+    background: green;
+    }
+
+    .black {
+    background: black;
+    }
+
+    .blue {
+    background: blue;
+    }
+
+    .brown {
+    background: brown;
+    }
+
+    .pink {
+    background: pink;
+    }
+
+    .purple {
+    background: purple;
+    }
+
+    .cyan {
+    background: cyan;
+    }
+
+    .yellow {
+    background: yellow;
+    }
+
+    .orange {
+    background: orange;
+    }
+
+    .navy {
+    background: navy;
+    }
+  </style>
+</body>
+</html>

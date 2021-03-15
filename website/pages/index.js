@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export function Navbar() {
   return (
       <div className="header">
-
+        
         <motion.div initial="hidden" animate="visible" variants={{
           hidden: {
             scale: .2,
@@ -70,7 +70,7 @@ export function Navbar() {
         text-align: center;
       }
       .nav:hover {
-        color: black;
+        color: #353638;
         font-size: 23px;
         font-family: "Poppins";
         font-style: bolder;
@@ -92,60 +92,62 @@ export default function Home() {
         <title>MiniBoard</title>
         <link rel="icon" href="https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png" />
       </Head>
-      <section>
-        <center>
-          <Navbar />
-        </center>
-        <div className='centerA'>
-          <div>
-            <center>
-              <motion.div initial="hidden" animate="visible" variants={{
-                hidden: {
-                  scale: .2,
-                  opacity: 0
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: .6
-                  }
-                },
-              }}>
-                <h1 className="thin-h1">MiniBoard</h1>
-                <h3 className="info">Have a ton of fun playing all sorts of games and activites from the 2D pong game to 2D soccer to the ISS location!</h3>
-                <p className="italic">Having Fun -> Being Positive -> Better Mindset</p>
+      <motion.div exit={{ opacity: 0 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <section>
+          <center>
+            <Navbar />
+          </center>
+          <div className='centerA'>
+            <div>
+              <center>
+                <motion.div initial="hidden" animate="visible" variants={{
+                  hidden: {
+                    scale: .2,
+                    opacity: 0
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: .6
+                    }
+                  },
+                }}>
+                  <h1 className="thin-h1">MiniBoard</h1>
+                  <h3 className="info">Have a ton of fun playing all sorts of games and activites from the 2D pong game to 2D soccer to the ISS location!</h3>
+                  <p className="italic">Having Fun -> Being Positive -> Better Mindset</p>
 
-              </motion.div>
-            </center>
-              
-          </div>
-        </div>
-        <center>
-          <a href="#download">
-            <div className="scrolldown">
-              <span></span>
-              <span></span>
-              <span></span>
+                </motion.div>
+              </center>
+                
             </div>
-          </a>
-        </center>
-      </section>
-      <section id="download">
-        <center>
-          <div className="card1">
-            <div className="space"></div>
-            <h2 className="thin-h1 marginT" >Download The MiniBoard App</h2>
-            <a className="info link" href="https://github.com/Taptaplit/Timathon"><p>Click here to download the MiniBoard App!</p></a>
-            <hr className="black-border"/>
-            <h3 className="thin-h1">Instructions</h3>
-            <p className='info'>Scroll Down to the README.md file</p>
-            <p className="info marginB">Follow the simple installation & run guide! If you are having trouble, you can just visit MiniBoard Website Edition (MiniBoard V2).</p>
-            <p>ENJOY!!</p>
           </div>
-          <img className="LOGO" src="https://camo.githubusercontent.com/2fc50652cd9d3626fd858627fc482c8ba341195e9f06cec77346f9ac094087e9/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3737313832313234353239323630393535362f3832303339323635323737393239303632342f756e6b6e6f776e2e706e67" alt="MiniBoard Logo" />
-        </center>
-      </section>
+          <center>
+            <a href="#download">
+              <div className="scrolldown">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </center>
+        </section>
+        <section id="download">
+          <center>
+            <div className="card1">
+              <div className="space"></div>
+              <h2 className="thin-h1 marginT" >Download The MiniBoard App</h2>
+              <a className="info link" href="https://github.com/Taptaplit/Timathon"><p>Click here to download the MiniBoard App!</p></a>
+              <hr className="black-border"/>
+              <h3 className="thin-h1">Instructions</h3>
+              <p className='info'>Scroll Down to the README.md file</p>
+              <p className="info marginB">Follow the simple installation & run guide! If you are having trouble, you can just visit MiniBoard Website Edition (MiniBoard V2).</p>
+              <p>ENJOY!!</p>
+            </div>
+            <img className="LOGO" src="https://camo.githubusercontent.com/2fc50652cd9d3626fd858627fc482c8ba341195e9f06cec77346f9ac094087e9/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3737313832313234353239323630393535362f3832303339323635323737393239303632342f756e6b6e6f776e2e706e67" alt="MiniBoard Logo" />
+          </center>
+        </section>
+      </motion.div>
       <style jsx> {`
       .black-border {
         border: 1px solid black;
@@ -171,6 +173,20 @@ export default function Home() {
         transform: translateY(-80px) translateX(-30px) rotate(45deg);
       }
 
+      .scrolldown:hover {
+        
+      }
+
+      
+
+      .scrolldown span:hover {
+        --abg: black;
+      }
+
+      :root {
+        --abg: #fff;
+      }
+
       .scrolldown span {
         position: absolute;
         top: 0;
@@ -183,6 +199,9 @@ export default function Home() {
         animation: animate 1.5s linear infinite;
         opacity: 0;
       }
+
+
+      
 
       .scrolldown span:nth-child(1) {
         transform: translate(-15px, -15px);
