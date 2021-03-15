@@ -1,6 +1,6 @@
 # MiniBoard
 
-### There is a website and application for MiniBoard. I recommend visiting the [website](https://github.com)(PUT ACTUL WEBSITE LINK THERE) before trying the application.
+### There is a website and application for MiniBoard. I recommend visiting the [website](https://miniboard.vercel.app/) before trying the application.
 
 ### ________________________________________________________________________________________
 
@@ -13,15 +13,9 @@
 
 ### ________________________________________________________________________________________
 
-## Website Info
-### Website files -> ``cd website``
-### Website link -> ``LINK``
-
-### ________________________________________________________________________________________
-
 ## MiniBoard
 ![image](https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png)
-### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. There is also a [website](https://github.com)(PUT ACTUAL LINK HERE) version of MiniBoard, it is different than the app, so try to do some games/activites in both.
+### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. [Website Link](https://miniboard.vercel.app/) | The app has to be downloaded.
 
 #### **Note: There are 2 miniboards, one for the website and the other is for the app, both of them are different. If you can please try to check out both, you do not have to play every game/activity, but try to do some. At least try to visit the website, if not both.
 
@@ -49,6 +43,9 @@
 
 ## MiniBoard Website Edition (MiniBoard V2)
 
+### [Drawing board](https://miniboard.vercel.app/v2/draw.html)
+#### Express your creativity and visulization skills by drawing! You can change the line color and size. It also comes with clear and download functionality! Have fun playing around with it!
+![image](https://cdn.discordapp.com/attachments/754004845404487831/820842971087372298/unknown.png)
 
 
 ### ________________________________________________________________________________________
