@@ -13,12 +13,6 @@
 
 ### ________________________________________________________________________________________
 
-## Website Info
-### Website files -> ``cd website``
-### Website link -> ``https://miniboard.vercel.app/``
-
-### ________________________________________________________________________________________
-
 ## MiniBoard
 ![image](https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png)
 ### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. [Website Link](https://miniboard.vercel.app/) | The app has to be downloaded.
