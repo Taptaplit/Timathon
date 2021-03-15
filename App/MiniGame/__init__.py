@@ -56,7 +56,7 @@ def home_loop():
         
         button('Energised', 'Game\\standing.png', 40, 100, 64, 64, MGE.game_intro)
         button('Soccer', 'Game\\R2.png', 140, 100, 64, 64, MGS.game_intro)
-        button('Pong Game', 'Game\\R2.png', 250, 100, 64, 64, MGP.game_intro)
+        button('Pong Game', 'Game\\paddle.png', 250, 100, 64, 64, MGP.game_intro)
         button('ISS location', 'Game\\R2.png', 400, 100, 64, 64, MGI.game_intro)
         
         

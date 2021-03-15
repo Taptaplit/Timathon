@@ -44,7 +44,7 @@ def button(msg, x, y, width, height, i, a, action, ac=False):
         elif click[0] == 1 and ac == True:
         	d = action()
         	d.show()
-        	time.sleep(10)
+        	time.sleep(2)
         elif click[0] == 1 and action != None and action != 'Quit':
             action()
     else:

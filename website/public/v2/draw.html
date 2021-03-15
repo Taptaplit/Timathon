@@ -30,7 +30,7 @@
     <button id="download">Download</button>
     <div class="slidecontainer">
         <label class="mg-20"> Line Thickness <span id="sliderVal"></span></label> 
-        <input type="range" min="1" max="150" value="5" class="slider" id="myRange">
+        <input type="range" min="1" max="150" value="10" class="slider" id="myRange">
     </div>
   </div>
   </center>  
@@ -61,6 +61,7 @@
         }
         
         canvas.addEventListener('mousedown', startPosition);
+        changeThickness(5);
         canvas.addEventListener('mouseup', finishedPosition);
         canvas.addEventListener('mousemove', draw);
         function draw(e) {
@@ -116,8 +117,8 @@
     };
 
     var slider = document.getElementById("myRange");
-    changeThickness(slider.value);
     var output = document.getElementById("sliderVal");
+    slider.value = 5
     output.innerHTML = slider.value;
 
     slider.oninput = function() {
