@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <title>MiniBoard</title>
 </head>
-<body>
+<body>  
 <a href="/v2"><button type="button" class="goBtn">Go Back To MiniBoard V2</button></a>
+<center>
+    <h2>MiniBoard V2 Drawing 101</h2>    
+    <h4 class="mg-20">**Scroll All The Way Down For No Offset</h4>
+</center>
   <center>
     <canvas id="canvas"></canvas>
   <h2>Paint Pallet</h2>
@@ -61,7 +65,6 @@
         }
         
         canvas.addEventListener('mousedown', startPosition);
-        changeThickness(5);
         canvas.addEventListener('mouseup', finishedPosition);
         canvas.addEventListener('mousemove', draw);
         function draw(e) {
@@ -118,7 +121,6 @@
 
     var slider = document.getElementById("myRange");
     var output = document.getElementById("sliderVal");
-    slider.value = 5
     output.innerHTML = slider.value;
 
     slider.oninput = function() {
@@ -157,6 +159,11 @@
         background: red;
         color: white;
         border: 2px solid black;
+    }
+
+    .dF {
+        display: flex;
+        align-items: center;
     }
 
     .slider {
