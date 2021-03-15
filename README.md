@@ -49,6 +49,9 @@
 
 ## MiniBoard Website Edition (MiniBoard V2)
 
+### [Drawing board](https://miniboard.vercel.app/v2/draw.html)
+#### Express your creativity and visulization skills by drawing! You can change the line color and size. It also comes with clear and download functionality! Have fun playing around with it!
+![image](https://cdn.discordapp.com/attachments/754004845404487831/820842971087372298/unknown.png)
 
 
 ### ________________________________________________________________________________________
