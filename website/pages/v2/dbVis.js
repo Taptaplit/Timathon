@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import axios from './axios';
+import axios from '../api/axios';
 
 
 export default function Content() {
