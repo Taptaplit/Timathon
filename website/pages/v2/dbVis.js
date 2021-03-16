@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import axios from '../api/axios';
+import { GlobalStyle } from "../index";
 
 
 export default function Content() {
@@ -43,33 +44,30 @@ export default function Content() {
                 <title>MiniBoard</title>
                 <link rel="icon" href="https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png" />
             </Head>
-            <a href="/v2"><button type="button" className="goBtn mg-20">Go Back To MiniBoard V2</button></a>
-            <center>  
-                <h1>MongoDB Visualizer</h1>
-                <h5>**Scroll down to add your name & hobby!</h5>
-            </center>
-            {users.map((arr) => (
-                <div className="flex-box">
-                    <ul className="bold">{brac1}
-                        <li className="bold mg-20">{"'_id': " + '"' + arr._id + '"'}</li>
-                        <li className="bold mg-20">{"'name': " + '"' + arr.name + '"'}</li>
-                        <li className="bold mg-20">{"'hobby': " + '"' + arr.hobbie + '"'}</li>
-                    {brac2}</ul>
-                </div>
-            ))}
-            <center>
-                <p className="bold">Name <input className="modern-btn" type="text" onChange={e => setData({ ...data, name: e.target.value })} /></p>
-                <p className="bold">Hobby <input className="modern-btn" type="text" onChange={e => setData({ ...data, hobbie: e.target.value })} /></p>
-                <button onClick={() => handleSubmit(data) } className="goBtn">Submit</button>
-            </center>
+            <section>
+                <a href="/v2"><button type="button" className="goBtn mg-20">Go Back To MiniBoard V2</button></a>
+                <center>  
+                    <h1>MongoDB Visualizer</h1>
+                    <h5>**Scroll down to add your name & hobby!</h5>
+                </center>
+                {users.map((arr) => (
+                    <div className="flex-box">
+                        <ul className="bold">{brac1}
+                            <li className="bold mg-20">{"'_id': " + '"' + arr._id + '"'}</li>
+                            <li className="bold mg-20">{"'name': " + '"' + arr.name + '"'}</li>
+                            <li className="bold mg-20">{"'hobby': " + '"' + arr.hobbie + '"'}</li>
+                        {brac2}</ul>
+                    </div>
+                ))}
+                <center>
+                    <p className="bold">Name <input className="modern-btn" type="text" onChange={e => setData({ ...data, name: e.target.value })} /></p>
+                    <p className="bold">Hobby <input className="modern-btn" type="text" onChange={e => setData({ ...data, hobbie: e.target.value })} /></p>
+                    <button onClick={() => handleSubmit(data) } className="goBtn">Submit</button>
+                </center>
+            </section>
 
+      <GlobalStyle />
       <style jsx> {`
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-        .container {
-            background:#159CD6;
-            height: 100;
-            font-family:'Poppins';
-        }
 
 
         .modern-btn {
@@ -97,16 +95,8 @@ export default function Content() {
             list-style: none;
            }
 
-        section {
-            height: 100vh;
-        }
-
         .mg-20 {
             margin-left: 20px;
-        }
-
-        .bold {
-            font-weight: bold;
         }
 
         .goBtn {

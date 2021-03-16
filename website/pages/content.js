@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import { motion } from 'framer-motion';
-import { Navbar } from "./index";
+import { GlobalStyle, Navbar } from "./index";
 
 export default function Content() {
     return (
@@ -96,74 +96,8 @@ export default function Content() {
       </section>
 
       <style jsx> {`
-      .centerA {
-        margin-top: 100px;
-        scroll-behavior: smooth;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .scrolldown {
-        scroll-behavior: smooth;
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        transform: translateY(-80px) translateX(-30px) rotate(45deg);
-      }
-
-      .scrolldown span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-bottom: 2px solid #fff;
-        border-right: 2px solid #fff;
-        animation: animate 1.5s linear infinite;
-        opacity: 0;
-      }
-
-      .scrolldown span:nth-child(1) {
-        transform: translate(-15px, -15px);
-        animation-delay: -0.4s;
-      }
-
-      .scrolldown span:nth-child(2) {
-        transform: translate(0, 0);
-      }
       
-      .scrolldown span:nth-child(3) {
-        transform: translate(15px, 15px);
-      }
-
-      @keyframes animate
-      {
-        0% {
-          top: -5px;
-          left: -5px;
-          opacity: 0;
-        }
-        25% {
-          top: 0px;
-          left: 0px;
-          opacity: 1;
-        }
-        100% {
-          top: 5px;
-          left: 5px;
-          opacity: 0;
-        }
-      }
-
-
-      section {
-        min-height: 100vh;
-      }
-      @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+      
     .flex-box {
         width: 75%;
         display: flex;
@@ -203,20 +137,6 @@ export default function Content() {
         flex-direction: row;
         flex-wrap: wrap;
     }
-      .container {
-        scroll-behavior: smooth;
-        background: #159CD6;
-      }
-      .thin-h1 {
-        font-weight: 300;
-      }
-      .italic {
-        font-weight: 100;
-        font-style: italic;
-      }
-      .info {
-        font-weight: 200;
-      }
 
   `} </style>
 

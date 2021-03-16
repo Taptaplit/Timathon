@@ -1,6 +1,117 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import { motion } from 'framer-motion';
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background:#159CD6;
+  }
+
+  .centerA {
+    margin-top: 100px;
+    scroll-behavior: smooth;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    min-height: 100vh;
+  }
+  
+::-webkit-scrollbar {
+  display: none;
+}
+.element::-webkit-scrollbar { width: 0 !important }
+
+.bold {
+  font-weight: bold;
+}
+
+.thin-h1 {
+  font-weight: bold;
+}
+.italic {
+  font-weight: 100;
+  font-style: italic;
+}
+.info {
+  font-weight: bold;
+}
+
+.scrolldown {
+  scroll-behavior: smooth;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-30px) rotate(45deg);
+}
+
+.scrolldown span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2) {
+  transform: translate(0, 0);
+}
+
+.scrolldown span:nth-child(3) {
+  transform: translate(15px, 15px);
+}
+
+@keyframes animate
+{
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+
+`;
+
 
 export function Navbar() {
   return (
@@ -30,16 +141,14 @@ export function Navbar() {
           </a>
         </motion.div>
 
-          <style jsx>
-              {`
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+      <GlobalStyle />
+      <style jsx>{`
       body{
         margin: 0;
         padding: 0;
         overflow-x: hidden;
         overflow-y: hidden;
         scroll-behavior: smooth;
-
       }
       .header {
         margin: 0;
@@ -75,10 +184,6 @@ export function Navbar() {
         font-family: "Poppins";
         font-style: bolder;
       }
-
-    
-      
-      
       `}</style>
       </div>
   )
@@ -155,90 +260,8 @@ export default function Home() {
       .LOGO {
         height: 400px;
       }
-      .centerA {
-        margin-top: 100px;
-        scroll-behavior: smooth;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .scrolldown {
-        scroll-behavior: smooth;
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        transform: translateY(-80px) translateX(-30px) rotate(45deg);
-      }
-
-      .scrolldown:hover {
-        
-      }
 
       
-
-      .scrolldown span:hover {
-        --abg: black;
-      }
-
-      :root {
-        --abg: #fff;
-      }
-
-      .scrolldown span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-bottom: 2px solid #fff;
-        border-right: 2px solid #fff;
-        animation: animate 1.5s linear infinite;
-        opacity: 0;
-      }
-
-
-      
-
-      .scrolldown span:nth-child(1) {
-        transform: translate(-15px, -15px);
-        animation-delay: -0.4s;
-      }
-
-      .scrolldown span:nth-child(2) {
-        transform: translate(0, 0);
-      }
-      
-      .scrolldown span:nth-child(3) {
-        transform: translate(15px, 15px);
-      }
-
-      @keyframes animate
-      {
-        0% {
-          top: -5px;
-          left: -5px;
-          opacity: 0;
-        }
-        25% {
-          top: 0px;
-          left: 0px;
-          opacity: 1;
-        }
-        100% {
-          top: 5px;
-          left: 5px;
-          opacity: 0;
-        }
-      }
-
-
-      section {
-        min-height: 100vh;
-      }
       .space {
         margin: 10px;
       }
@@ -257,20 +280,7 @@ export default function Home() {
         border-radius: 20px;
         scroll-behavior: smooth;
       }
-      .container {
-        scroll-behavior: smooth;
-        background: #159CD6;
-      }
-      .thin-h1 {
-        font-weight: 300;
-      }
-      .italic {
-        font-weight: 100;
-        font-style: italic;
-      }
-      .info {
-        font-weight: 200;
-      }
+      
 
   `} </style>
 
