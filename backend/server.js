@@ -50,5 +50,5 @@ app.get('/', (req, res) => {
 });
 
 
-
-app.listen(3001)
+const port = process.env.PORT || 8001
+app.listen(port)
