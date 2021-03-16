@@ -67,7 +67,7 @@ export default function Content() {
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
         .container {
             background:#159CD6;
-            height: 100%;
+            height: 100;
             font-family:'Poppins';
         }
 
