@@ -39,7 +39,6 @@
 ## MiniBoard App
 
 
-### Games
 
 #### Pong Game
 ##### A 2D pong game. First to 21 wins! Player 1's controls -> W & S; Player 2's controls -> Up & Down Arrow keys 
