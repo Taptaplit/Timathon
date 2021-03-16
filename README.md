@@ -54,7 +54,7 @@
 
 
 ### ________________________________________________________________________________________
-##Credits
+## Credits
 ### Hosting Website Frontend -> [Vercel](https://vercel.com/)
 ### Hosting Website Backend -> [Heroku](https://heroku.com/)
 
