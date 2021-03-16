@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "![image](https://media.discordapp.net/attachments/771821245292609556/820392652779290624/unknown.png)\r ### A board fun games and activites!! It is made in python and uses the modules os, pygame, and random. There is also a [website](https://github.com)(PUT ACTUAL LINK HERE) version of MiniBoard, it is different than the app, so try to do some games/activites in both.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taptaplit/Timathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taptaplit/Timathon/issues"
+  },
+  "homepage": "https://github.com/Taptaplit/Timathon#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.0"
+  }
+}
