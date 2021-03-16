@@ -46,27 +46,43 @@ export default function Content() {
             <a href="/v2"><button type="button" className="goBtn mg-20">Go Back To MiniBoard V2</button></a>
             <center>  
                 <h1>MongoDB Visualizer</h1>
+                <h5>**Scroll down to add your name & hobby!</h5>
             </center>
             {users.map((arr) => (
                 <div className="flex-box">
                     <ul className="bold">{brac1}
-                        <li className="bold mg-20">{"'_id': " + arr._id}</li>
-                        <li className="bold mg-20">{"'name': " + arr.name}</li>
-                        <li className="bold mg-20">{"'hobby': " + arr.hobbie}</li>
+                        <li className="bold mg-20">{"'_id': " + '"' + arr._id + '"'}</li>
+                        <li className="bold mg-20">{"'name': " + '"' + arr.name + '"'}</li>
+                        <li className="bold mg-20">{"'hobby': " + '"' + arr.hobbie + '"'}</li>
                     {brac2}</ul>
                 </div>
             ))}
             <center>
-                <p className="bold">Name <input type="text" onChange={e => setData({ ...data, name: e.target.value })} /></p>
-                <p className="bold">Hobby <input type="text" onChange={e => setData({ ...data, hobbie: e.target.value })} /></p>
-                <button onClick={() => handleSubmit(data) }>Submit</button>
+                <p className="bold">Name <input className="modern-btn" type="text" onChange={e => setData({ ...data, name: e.target.value })} /></p>
+                <p className="bold">Hobby <input className="modern-btn" type="text" onChange={e => setData({ ...data, hobbie: e.target.value })} /></p>
+                <button onClick={() => handleSubmit(data) } className="goBtn">Submit</button>
             </center>
 
       <style jsx> {`
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
         .container {
             background:#159CD6;
+            height: 100%;
             font-family:'Poppins';
+        }
+
+
+        .modern-btn {
+            background: transparent;
+            border: 1px solid #159CD6;
+            border-bottom: 2px solid #fff;
+            color: white;
+            transition: 0.7s ease-in-out;
+        }
+
+        .modern-btn:hover {
+            transition: 0.7s ease-in-out;
+            width: 200px;
         }
 
         .flex-box {
