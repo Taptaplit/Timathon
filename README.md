@@ -57,6 +57,8 @@
 ## Credits
 ### Hosting Website Frontend -> [Vercel](https://vercel.com/)
 ### Hosting Website Backend -> [Heroku](https://heroku.com/)
+### Website Framework -> [Next.js](https://nextjs.org/)
+### Backend Framework -> [express.js](https://expressjs.com/)
 
 
 
