@@ -21,6 +21,28 @@ export const GlobalStyle = createGlobalStyle`
     background:#159CD6;
   }
 
+  .goBtn {
+    font-weight: bold;
+    font-family: 'Poppins';
+    width: 200px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    margin-top: 20px;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.goBtn:hover {
+    width: 220px;
+    height: 33px;
+    background: white;
+    border: 2px solid white;
+    color: black;
+    font-size: 15px;
+}
+
   .centerA {
     margin-top: 100px;
     scroll-behavior: smooth;

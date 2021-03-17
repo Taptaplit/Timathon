@@ -85,7 +85,7 @@ export default function Content() {
                     </div>
 
                     <div className="cards">
-                        <a href="https://media.discordapp.net/attachments/754004845404487831/820492310164013056/unknown.png"><img src="https://media.discordapp.net/attachments/754004845404487831/820492310164013056/unknown.png" /></a>
+                        <img src="https://camo.githubusercontent.com/39eaa409a16638b3eed9e48685368d49aab2988629ae6a10ba91883e139cf6ed/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3735343030343834353430343438373833312f3832313534393937343332373339343333342f756e6b6e6f776e2e706e67" />
                         <center>
                           <a href="/v2/data.html"><h3 className="thin-h1 cards-title">Pie Ploter</h3></a>
                         </center>
