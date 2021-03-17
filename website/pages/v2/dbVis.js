@@ -49,6 +49,7 @@ export default function Content() {
                 <center>  
                     <h1>MongoDB Visualizer</h1>
                     <h5>**Scroll down to add your name & hobby!</h5>
+                    <p>Please Do Not Spam, Thank You!</p>
                 </center>
                 {users.map((arr) => (
                     <div className="flex-box">

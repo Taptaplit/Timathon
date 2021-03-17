@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>MiniBoard | Graphing</title>
+    </head>
+    <body>
+    <a href="/v2"><button type="button" id = 'btn'class="goBtn">Go Back To MiniBoard V2</button></a>
+
+    <h1>MiniBoard | Pie Plot</h1>
+    <center>
+        <p class="error bolder" id="p1"></p>
+    </center>
+    <forms>
+        <div class="input-Container">
+            <input class="bar-name" placeholder="Name"></input>
+            <input class="bar-input" placeholder="Percentage"></input>
+        </div>
+
+        <!--<div class="input-Container">
+            <input class="bar-name" placeholder="Name"></input>
+            <input class="bar-input" placeholder="Percentage"></input>
+        </div>-->
+    </forms>
+
+    <button type="submit" class="goBtn-wB" onclick="addField()">+ Add Field</button>
+    <button type="submit" class="goBtn" onclick="checkForm()">Plot</button>
+
+    <center>
+        <svg class="pie-chart"></svg>
+    </center>
+    
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+        .input-Container {
+            display: flex;
+        }
+
+        .bolder {
+            font-weight: bolder;
+        }
+        .error {
+            color: red;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+        
+        body {
+            font-family: "Poppins";
+            scroll-behavior: smooth;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background:#159CD6;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+        }
+        h2 {
+        font-size: 20px;
+        text-align: center;
+        }
+
+        input {
+            background: transparent;
+            border: 1px solid #159CD6;
+            border-bottom: 2px solid #fff;
+            color: white;
+            margin: 10px;
+            transition: 0.7s ease-in-out;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        #btn {
+            position: fixed; /* or position: absolute; */
+            top: 0;
+            left: 20;
+        }
+
+
+        .goBtn {
+        font-weight: bold;
+        font-family: 'Poppins';
+        width: 200px;
+        margin-bottom: 20px;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid white;
+        background: transparent;
+        margin-top: 20px;
+        color: #fff;
+        transition: 0.5s ease-in-out;
+    }
+    .goBtn:hover {
+        width: 220px;
+        height: 33px;
+        background: white;
+        border: 2px solid white;
+        color: black;
+        font-size: 15px;
+    }
+
+    .goBtn-wB {
+        font-weight: bold;
+        font-family: 'Poppins';
+        width: 200px;
+        margin-bottom: 20px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background: transparent;
+        margin-top: 20px;
+        color: #fff;
+        transition: 0.5s ease-in-out;
+    }
+    .goBtn-wB:hover {
+        width: 220px;
+        height: 33px;
+        font-size: 15px;
+    }
+
+        img {
+        border-radius: 40%;
+        text-align: center;
+        }
+    
+    </style>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>
