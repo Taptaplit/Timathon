@@ -87,7 +87,7 @@ export default function Content() {
                     <div className="cards">
                         <a href="https://media.discordapp.net/attachments/754004845404487831/820492310164013056/unknown.png"><img src="https://media.discordapp.net/attachments/754004845404487831/820492310164013056/unknown.png" /></a>
                         <center>
-                            <h3 className="thin-h1">Pie Ploter</h3>
+                          <a href="/v2/data.html"><h3 className="thin-h1 cards-title">Pie Ploter</h3></a>
                         </center>
                         <p className="info">Give information & plot your pie chart right now!</p>
                     </div>
