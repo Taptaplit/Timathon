@@ -35,6 +35,10 @@
 ![image](https://media.discordapp.net/attachments/754004845404487831/821398124194037780/unknown.png)
 
 
+### [Pie Chart Ploter](https://miniboard.vercel.app/v2/data.html)
+#### Plot a pie plot with custom fields!
+![image](https://media.discordapp.net/attachments/754004845404487831/821548830151540776/unknown.png)
+
 ### ________________________________________________________________________________________
 ## MiniBoard App
 
